@@ -1,4 +1,6 @@
 # Selection sort and Insertion sort
+## NAME: DEVA DHARSHINI I
+## REGISTER NO: 212223240026
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
 ## Equipment’s required:
@@ -18,26 +20,40 @@ To write a program to perform selection sort and insertion sort using python pro
 4.	Break the loop and insert X.
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
-i)	#Selection Sort
 ```
-
-
-
-
-
+i)	#Selection Sort
+#Write a program to sort the elements in the list using the Selection Sort algorithm.
+#Deveolped by:DEVA DHARSHINI I
+#Register no:212223240026
+num=eval(input())
+for i in range(len(num)):
+    low=i
+    for j in range(i+1,len(num)):
+        if num[j]<num[low]:
+            low=j
+    num[i],num[low]=num[low],num[i]
+print(num)
 ```
 ii)	#Insertion Sort
 ```
-
-
-
-
-
-
+#Write a program to sort the elements in the list using the Insertion Sort algorithm.
+#Deveolped by:DEVA DHARSHINI I
+#Register no:212223240026
+num=eval(input())
+for i in range(1,len(num)):
+    insert=num[i]
+    j=i-1
+    while j>=0 and num[j]>=insert:
+        num[j+1]=num[j]
+        j=j-1
+    num[j+1]=insert
+print(num)
 ```
 
 ## Output:
+![Screenshot 2024-05-12 160003](https://github.com/deesk13/Sorting-Algorithms/assets/150927063/a6ec67e6-b182-4c64-af22-f305b460011b)
 
+![Screenshot 2024-05-12 160017](https://github.com/deesk13/Sorting-Algorithms/assets/150927063/13a64d25-a866-43e9-b98d-b8374d4293e8)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
